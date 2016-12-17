@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="utf-8">
+	<title>BB</title>
+<link rel="stylesheet" href="static/css/main.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script src="angular-route/angular-route.js"></script>
+	<script src="app.js"></script>
+	<script src="controllers/sessionController.js"></script>
+	<script src="factories/sessionFactory.js"></script>
+	<script src="controllers/surveyController.js"></script>
+	<script src="factories/surveyFactory.js"></script>
+
+</head>
+<body>
+	<h1>Welcome</h1>
+	<a href="#/login">Login Here</a> | <a href="/logout">Logout</a> | <a href="#/home">Home</a>
+
+	<ng-view>
+		
+	</ng-view>
+</body>
+</html>

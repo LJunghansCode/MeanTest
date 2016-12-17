@@ -1,0 +1,21 @@
+<div ng-controller = "sessionController">
+	<h3>Welcome {{curr_user.session.name}}</h3>|<h3><a href="#/create">Make a New Poll!</a></h3>
+</div>
+<div ng-controller="surveyController">
+			Search by author or survey question: <input type="text" ng-model="searchSurveys">
+	<table>
+		<tr><th>Author</th>
+			<th>Survey Question</th>
+			<th>Date Posted</th>
+			<th>Action</th></tr>
+			<tr ng-repeat="survey in all_surveys | filter:searchSurveys">
+			<td>{{survey.author}}</td>
+			<td><a href="#/survey/{{survey._id}}">{{survey.question}}</a></td>
+			<td>{{survey.date |date: short}}</td>
+			<td><a href="/delete/{{survey._id}}"><button ng-if="survey.author ==curr_user.session.name">Delete</button></a></td>
+			</tr>
+
+		
+	</table>
+	
+</div>

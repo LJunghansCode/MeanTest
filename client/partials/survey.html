@@ -1,0 +1,32 @@
+<div ng-controller=surveyController>
+<h2>{{showOne.question}}</h2>
+	<table><tr>
+		<th>Option</th>
+		<th>Votes</th>
+		<th>Action</th>
+		</tr>
+		<tr>
+			<td>{{showOne.option1.option}}</td>
+			<td>{{showOne.option1.votes}}</td>
+			<td><button ng-click="vote1()">Vote!</button></td>
+		</tr>
+		<tr>
+			<td>{{showOne.option2.option}}</td>
+			<td>{{showOne.option2.votes}}</td>
+			<td><button ng-click="vote2()">Vote!</button></td>
+		</tr>
+		<tr>
+			<td>{{showOne.option3.option}}</td>
+			<td>{{showOne.option3.votes}}</td>
+			<td><button ng-click="vote3()">Vote!</button></td>
+		</tr>
+		<tr>
+			<td>{{showOne.option4.option}}</td>
+			<td>{{showOne.option4.votes}}</td>
+			<td><button ng-click="vote4()">Vote!</button></td>
+		</tr>
+	</table>
+
+
+
+</div>

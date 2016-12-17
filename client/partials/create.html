@@ -1,0 +1,15 @@
+<div ng-controller="surveyController">
+<h4>Make a New Poll!  |  or.. <a href="#/home">cancel</a></h4>
+<h4>{{error}}</h4>
+<form>
+	Question: <input type="text" ng-model="newSurvey.question">
+	Option 1: <input type="text" ng-model="newSurvey.option1.option">
+	Option 2: <input type="text" ng-model="newSurvey.option2.option">
+	Option 3: <input type="text" ng-model="newSurvey.option3.option">
+	Option 4: <input type="text" ng-model="newSurvey.option4.option">
+	   		  <input type="submit" ng-click="new_survey()">
+</form>
+	
+
+
+</div>
